@@ -1,0 +1,291 @@
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #3498db;
+  --text-color: #ecf0f1;
+  --background-color: #f4f4f4;
+  --box-shadow: 0 4px 6px rgba(8, 1, 112, 0.3);
+}
+
+
+.home {
+  display: flex;
+  min-height: calc(100vh - 60px);
+  margin-top: 90px;
+}
+
+.sidebar {
+  width: 300px;
+  height:580px;
+  margin-top: 5px;
+  margin-left: 20px;
+  border-radius: 20px;
+  background-color: #060025;
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+  border-transition:var(--accent-color) 0.3
+  
+}
+
+
+.logo {
+  width: 300px;
+  height: 280px;
+  transition: transform 0.3s ease;
+}
+
+.hospitalname{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+  background: linear-gradient(
+    45deg,
+    #4361ee,
+    #4cc9f0
+  );
+  padding: 2px; /* optional, for spacing inside the list item */
+  border-radius: 5px; /* optional, for rounded corners */
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 19px;
+  border-radius: 8px;
+  background-color: rgba(10, 0, 66, 0.1);
+}
+
+.sidebar a:hover {
+  background: linear-gradient(
+    45deg,
+    #4361ee,
+    #4cc9f0
+  );
+  transform: translateX(10px);
+}
+
+
+
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  margin-top: -35px;
+  height:100px;
+}
+
+.boxes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+
+
+}
+
+.box {
+  background: rgba(9, 135, 202, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
+  height:270px;
+}
+
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.box h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.box-chart {
+  margin-bottom: -10px;
+}
+
+.box-chart{
+  background: rgba(9, 135, 202, 0.1);
+  color: var(--primary-color);
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
+  height:270px;
+}
+
+.box input {
+  width: 70%;
+  padding: 10px 1px 1px 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-left: -5px;
+  font-size: 5rem;
+  transition: border-color 0.3s ease;
+}
+
+.box input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+
+.box button {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 16px;
+  width: 80%;
+  font-weight: bold;
+}
+
+.box button:hover {
+  background-color: green;
+  transform: scale(1.05);
+}
+
+.bed-icon{
+  display: flex;
+  margin-left: 150px;
+  margin-top: 20px;
+  color: darkblue;
+}
+
+.box input {
+  height: 80px;
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(120deg, #3666ad, #65b5ff)
+}
+
+.available-beds h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.bed-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.bed-button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 0 15px;
+}
+
+.bed-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+.bed-controls span {
+  font-size: 32px;
+  margin: 0 25px;
+  color: var(--primary-color);
+}
+
+#submit-button {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 80%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#submit-button:hover {
+  background-color: green;
+  transform: scale(1.05);
+}
+
+.bed {
+  color:var(--primary-color);
+}
+
+.bed-title {
+  color: var(--primary-color);
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.box-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.box-header-icon {
+  width: 40px;
+  height: 40px;
+  color: var(--primary-color);
+}
+
+
+@media (max-width: 768px) {
+  .home {
+    padding: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .boxes-container {
+    grid-template-columns: 1fr;
+    
+
+  }
+
+  
+}
